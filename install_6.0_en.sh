@@ -35,11 +35,11 @@ Red_Error(){
 	exit 1;
 }
 
-is64bit=$(getconf LONG_BIT)
-if [ "${is64bit}" != '64' ];then
-	Red_Error "Sorry, aaPanel Does not support 32-bit systems, Use 64-bit system Please!";
-
-fi
+# is64bit=$(getconf LONG_BIT)
+# if [ "${is64bit}" != '64' ];then
+# 	Red_Error "Sorry, aaPanel Does not support 32-bit systems, Use 64-bit system Please!";
+#
+# fi
 Lock_Clear(){
 	if [ -f "/etc/bt_crack.pl" ];then
 		chattr -R -ia /www
